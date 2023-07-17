@@ -3,4 +3,4 @@
     - [x] random colors
     - [x] luminance (chroma library)
     - [x] color change on click ('Space')
-    - [x] lock color on click
+    - [ ] lock color on click

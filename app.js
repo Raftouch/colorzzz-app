@@ -1,9 +1,19 @@
 const cols = document.querySelectorAll('.col')
 
-document.addEventListener('keydown', event => {
-    if (event.code === 'Space') {
-        setRandomColor()
-    }
+document.addEventListener('keydown', (event) => {
+  // event.preventDefault()
+  if (event.code === 'Space') {
+    setRandomColor()
+  }
+})
+
+document.addEventListener('click', (event) => {
+  const type = event.target.dataset.type
+
+  if (type === 'lock') {
+    event.target.classList.toggle('fa-lock-open')
+    event.target.classList.toggle('fa-lock')
+  }
 })
 
 const generateRandomColor = () => {
