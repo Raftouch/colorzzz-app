@@ -1,2 +1,5 @@
 - [x] html & tailwindcss
-- [ ] add js
+- [x] add js
+    - [x] random colors
+    - [x] luminance (chroma library)
+    - [ ] add color change on click
