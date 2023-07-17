@@ -2,4 +2,5 @@
 - [x] add js
     - [x] random colors
     - [x] luminance (chroma library)
-    - [ ] add color change on click
+    - [x] color change on click ('Space')
+    - [x] lock color on click
