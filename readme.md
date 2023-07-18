@@ -3,4 +3,6 @@
     - [x] random colors
     - [x] luminance (chroma library)
     - [x] color change on click ('Space')
-    - [ ] lock color on click
+    - [x] lock color on click
+    - [x] copy color code
+    - [ ] block locked colors on page refresh
