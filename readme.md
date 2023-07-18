@@ -1,8 +1,8 @@
 - [x] html & tailwindcss
 - [x] add js
-    - [x] random colors
-    - [x] luminance (chroma library)
-    - [x] color change on click ('Space')
+    - [x] generate random colors
+    - [x] set luminance (chroma library)
+    - [x] change color on click ('Space')
     - [x] lock color on click
     - [x] copy color code
     - [x] update url hash
