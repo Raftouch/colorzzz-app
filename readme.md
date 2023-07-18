@@ -5,4 +5,4 @@
     - [x] color change on click ('Space')
     - [x] lock color on click
     - [x] copy color code
-    - [ ] block locked colors on page refresh
+    - [x] update url hash

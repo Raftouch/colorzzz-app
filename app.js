@@ -39,17 +39,21 @@ const setTextColor = (text, color) => {
 }
 
 const setRandomColor = () => {
+  const colors = []
+
   cols.forEach((col) => {
     const isLocked = col.querySelector('i').classList.contains('fa-lock')
-
     const header = col.querySelector('h2')
     const lock = col.querySelector('button')
     const color = generateRandomColor()
     // generateRandomColor() = chroma.random()
 
     if (isLocked) {
+      colors.push(header.textContent)
       return
     }
+
+    colors.push(color)
 
     header.textContent = color
     col.style.background = color
@@ -57,6 +61,12 @@ const setRandomColor = () => {
     setTextColor(header, color)
     setTextColor(lock, color)
   })
+
+  updateUrlHash(colors)
+}
+
+const updateUrlHash = (colors = []) => {
+  document.location.hash = colors.map((color) => color.substring(1)).join('-')
 }
 
 setRandomColor()
